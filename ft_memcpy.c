@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:15:17 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/21 11:38:33 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/05/21 11:49:08 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
-	unsigned char *udest;
-	unsigned char *usrc;
-	size_t count;
+	unsigned char	*udest;
+	unsigned char	*usrc;
+	size_t			count;
 
 	udest = (unsigned char*)dest;
 	usrc = (unsigned char*)src;

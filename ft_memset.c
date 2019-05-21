@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:23:47 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/21 10:29:46 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/05/21 11:48:34 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *str, int x, size_t len)
 {
 	unsigned char	*ptr;
-	size_t	count;
+	size_t			count;
 
 	ptr = str;
 	count = 0;
