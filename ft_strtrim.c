@@ -1,29 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 13:56:43 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/28 16:52:17 by svan-nie         ###   ########.fr       */
+/*   Created: 2019/06/03 07:39:51 by svan-nie          #+#    #+#             */
+/*   Updated: 2019/06/03 15:15:07 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+char	*ft_strtrim(char const *s)
 {
-	unsigned char	*ptr;
+	char		*temp;
+	size_t		len;
 	size_t		count;
-	ptr = (unsigned char*)size;
-	count = 0;
-	if (!(ptr = (void*)malloc(sizeof(ptr) * size)))
+	size_t		i;
+
+	i = 0;
+	len = 0;
+	if (!s)
 		return (NULL);
-	while (count < size)
+	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
 	{
-		ptr[count] = 0;
-		count++;
+		len++;
+		if (s[len] == '\0')
+			return ("");
 	}
-	return (ptr);
+	count = len;
+	len = ft_strlen(s) - 1;
+	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
+		len--;
+	if (!(temp = ft_strnew(len - count + 1)))
+		return (NULL);
+	while (count < len + 1)
+		temp[i++] = s[count++];
+	temp[i] = '\0';
+	return (temp);
 }

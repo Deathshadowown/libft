@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/15 08:56:44 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/16 09:26:37 by svan-nie         ###   ########.fr       */
+/*   Created: 2019/05/30 10:53:55 by svan-nie          #+#    #+#             */
+/*   Updated: 2019/05/30 10:58:44 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *str, int c)
+int	ft_iswhitespace(char c)
 {
-	int index;
-
-	index = 0;
-	while (str[index] != c && str[index] != '\0')
-	{
-		index++;
-	}
-	if (str[index] == c)
-		return (char *)&str[index];
-	return (NULL);
+	if ((c == ' ') || (c == '\t') || (c == '\f') ||
+			(c == '\r') || (c == '\v'))
+		return (1);
+	return (0);
 }

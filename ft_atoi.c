@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:41:23 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/23 13:58:52 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/05/23 16:27:53 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(char *str)
 {
-	int	nbr;
-	int	negative;
-	int	i;
+	size_t	nbr;
+	size_t	negative;
+	size_t	i;
 
 	nbr = 0;
 	negative = 0;

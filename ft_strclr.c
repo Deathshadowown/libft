@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/15 12:49:52 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/15 13:03:59 by svan-nie         ###   ########.fr       */
+/*   Created: 2019/05/28 11:51:39 by svan-nie          #+#    #+#             */
+/*   Updated: 2019/05/29 08:56:20 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-int	ft_isprint(int c)
+void	ft_strclr(char *str)
 {
-	if (c >= 32 && c <= 127)
-		return (1);
-	return (0);
+	int count;
+
+	count = 0;
+	if (!str)
+		return ;
+	while (str[count] != '\0')
+	{
+		str[count] = 0;
+		count++;
+	}
 }

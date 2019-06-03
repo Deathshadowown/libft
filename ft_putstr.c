@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/14 08:57:10 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/14 13:37:16 by svan-nie         ###   ########.fr       */
+/*   Created: 2019/05/28 09:53:39 by svan-nie          #+#    #+#             */
+/*   Updated: 2019/05/29 08:53:05 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+void	ft_putstr(char *str)
 {
-	size_t len;
+	int count;
 
-	len = 0;
-	while (str[len] != '\0')
+	count = 0;
+	if (!str)
+		return ;
+	while (str[count])
 	{
-		len++;
+		write(1, str++, 1);
 	}
-	return (len);
 }

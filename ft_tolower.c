@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/15 12:30:18 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/15 12:45:32 by svan-nie         ###   ########.fr       */
+/*   Created: 2019/05/23 15:41:02 by svan-nie          #+#    #+#             */
+/*   Updated: 2019/05/23 15:41:52 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	ft_isalpha(int c)
+int	ft_tolower(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
-
-int	main(void)
-{
-	char	str[] = "65";
-	printf("%d", ft_isalpha(4));
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }
