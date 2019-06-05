@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 09:33:53 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/29 13:54:38 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/04 07:40:33 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (!s)

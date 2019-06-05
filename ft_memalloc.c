@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 13:56:43 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/29 11:02:21 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/04 07:39:58 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memalloc(size_t size)
 {
 	unsigned char	*ptr;
-	size_t		count;
+	size_t			count;
 
 	ptr = (unsigned char*)size;
 	count = 0;

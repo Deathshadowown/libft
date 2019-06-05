@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:54:58 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/28 14:08:51 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/04 07:40:15 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnew(size_t size)
 	int		count;
 
 	count = 0;
-	if(!(str = (char*)malloc(sizeof(char) * (size + 1))))
+	if (!(str = (char*)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
 	while (str[count])
 	{

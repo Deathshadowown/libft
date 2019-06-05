@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:53:39 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/29 08:53:05 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/05 09:36:19 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 void	ft_putstr(char *str)
 {
-	int count;
-
-	count = 0;
 	if (!str)
 		return ;
-	while (str[count])
+	while (*str)
 	{
 		write(1, str++, 1);
 	}

@@ -6,13 +6,13 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:41:23 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/05/23 16:27:53 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:09:02 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(char const *str)
 {
 	size_t	nbr;
 	size_t	negative;
@@ -21,8 +21,7 @@ int	ft_atoi(char *str)
 	nbr = 0;
 	negative = 0;
 	i = 0;
-	while ((str[i] == '\n') || (str[i] == '\f') || (str[i] == '\v') ||
-		(str[i] == '\r') || (str[i] == '\t') || (str[i] == ' '))
+	while (ft_iswhitespace(str[i]))
 		i++;
 	if (str[i] == '-')
 		negative = 1;
