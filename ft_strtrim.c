@@ -6,7 +6,7 @@
 /*   By: svan-nie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 07:39:51 by svan-nie          #+#    #+#             */
-/*   Updated: 2019/06/03 15:15:07 by svan-nie         ###   ########.fr       */
+/*   Updated: 2019/06/11 12:49:59 by svan-nie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s)
 	{
 		len++;
 		if (s[len] == '\0')
-			return ("");
+			return (ft_strdup(""));
 	}
 	count = len;
 	len = ft_strlen(s) - 1;
